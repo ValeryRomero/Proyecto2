@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+section header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    bottom: 420px;
+}
+
+section header ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+section header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+section header ul li a {
+    color: #111;
+    text-decoration: none;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    padding-top: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+
+
+section header ul li a:hover{
+    background: #cecece;
+}
+
+section header ul li button {
+    background: #4584ef;
+    border: none;
+    outline: none;
+    padding: 8px 14px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section header ul li button:hover {
+    background: #3670d6;
+}
+
+
+
+
+
+body {
+    background-color: white;
+}
+
+
+.logo {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    align-self: flex-start;
+    padding-top: 8px;
+    width: 100%;
+    position: relative;
+    right: 300px;
+}
+
+.logo img {
+    width: 95px;
+    height: auto;
+}
+
+.searchbox{
+    display: flex;
+    align-items: center;
+    border: 2px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 8px 16px;
+    width: 850px;
+    position: relative;
+    right: 590px;
+}
+
+.search {
+    border: none;
+    outline: none;
+    flex: 1;     
+    font-size: 16px;
+    min-width: 0;
+    max-width: 800px;
+}
+
+
+.iconos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    margin-left: 130px;
+}
+
+.iconos img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.iconos img:hover {
+    background-color: #cecece;
+}
+
+
+.filtros {
+    border-bottom: 1px solid #dfe1e5;
+    padding: 0 20px;
+    position: relative;
+    bottom: 845px;
+    left: 200px;
+}
+
+.filtros ul {
+    display: flex;
+    gap: 4px;
+    list-style: none;
+}
+
+.filtros ul li a {
+    display: block;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: #606060;
+    text-decoration: none;
+}
+
+.filtros ul li a:hover {
+    color: #1a73e8;
+    border-bottom: 3px solid #1a73e8;
+}
+
+.filtros ul li.active a {
+    color: #1a73e8;
+    border-bottom: 3px solid #1a73e8;
+}
+
+
+.contenido {
+    position: relative;
+    bottom: 815px;
+    left: 250px;
+}
+
+
+.ubicacion {
+    font-size: 14px;
+    color: #606060;
+    margin-bottom: 16px;
+    position: relative;
+    bottom: 10px;
+}
+
+.ubicacion a {
+    color: #1a0dab;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.ubicacion a:hover {
+    text-decoration: underline;
+}
+
+.resultado {
+    margin-bottom: 28px;
+    max-width: 600px;
+}
+
+.resultado .url {
+    font-size: 13px;
+    color: #606060;
+}
+
+.resultado h3 {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 2px 0;
+}
+
+.resultado h3 a {
+    color: #1a0dab;
+    text-decoration: none;
+}
+
+.resultado h3 a:hover {
+    text-decoration: underline;
+}
+
+.resultado p {
+    font-size: 14px;
+    color: #4d5156;
+    line-height: 1.5;
+}
+
+
+.biografia {
+    border: 1px solid #dfe1e5;
+    border-radius: 8px;
+    padding:50px 80px;
+    width: 500px;
+    height: auto;
+    font-size: 13px;
+    position: relative;
+    left: 55%;
+    bottom: 1600px;
+}
+
+.bio-foto img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.biografia h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 2px;
+}
+
+.bio-subtitulo {
+    color: #606060;
+    margin: 0 0 12px;
+}
+
+.bio-descripcion {
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.bio-info table {
+    width: 100%;
+    border-top: 1px solid #dfe1e5;
+    padding-top: 12px;
+    border-collapse: collapse;
+}
+
+.bio-info td {
+    padding: 5px 0;
+}
+
+.bio-info td:last-child {
+    text-align: right;
+}
+
+.bio-fuente {
+    font-size: 11px;
+    color: #606060;
+    margin-top: 12px;
+}
+
+.bio-fuente a {
+    color: #1a0dab;
+    text-decoration: none;
+}
+
+
+.videos {
+    max-width: 600px;
+    margin-bottom: 28px;
+    position: relative;
+    left: 250px;
+    bottom: 1495px;
+
+}
+
+.video {
+    margin-bottom: 24px;
+}
+
+.video-canal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 4px;
+}
+
+.canal-icono {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #ff0000;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.canal-nombre {
+    font-size: 13px;
+    color: #606060;
+    display: block;
+}
+
+.canal-vistas {
+    font-size: 12px;
+    color: #606060;
+    display: block;
+}
+
+.video h4 {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 4px 0 8px;
+}
+
+.video h4 a {
+    color: #1a0dab;
+    text-decoration: none;
+}
+
+.video h4 a:hover {
+    text-decoration: underline;
+}
+
+.video-contenido {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+}
+
+.video-thumb {
+    position: relative;
+    width: 160px;
+    min-width: 160px;
+    height: 90px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #e0e0e0;
+}
+
+.video-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.duracion {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    font-size: 11px;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.video-contenido p {
+    font-size: 13px;
+    color: #4d5156;
+    line-height: 1.5;
+    margin: 0;
+}
+
